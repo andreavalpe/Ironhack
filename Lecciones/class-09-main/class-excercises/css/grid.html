@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Class Excercise 001 */
+      .container {
+        display: grid;
+        height: 100vh;
+
+        /* Grid Props  */
+
+        /* Variaton 001 */
+        /* grid-template-rows: auto 1fr auto; */
+
+        /* Variaton 002 */
+        /* Paco's Version */
+        /* grid-template-rows: 1fr 6fr 1fr; */
+
+        /* Variaton 003 */
+        /* grid-template-rows: 20% 60% 20%; */
+      }
+      /* .container .one {
+        background: yellow;
+      }
+      .container .two {
+        background: blue;
+      }
+      .container .three {
+        background: red;
+      } */
+
+      /* Class Excercise 002 */
+      .container-2 {
+        display: grid;
+        height: 100vh;
+
+        /* Variation 001 - Complex - Depending on Grid-rows & grid-columns */
+        grid-template-rows: auto auto 1fr;
+        grid-template-columns: auto 1fr;
+
+        /* Variation 002 - Using grid Areas depending on the grid-template-row prop on the father */
+        grid-template-areas:
+          "header header header"
+          "navbar navbar navbar"
+          "sidebar main main";
+      }
+      .header {
+        background: red;
+        /* grid-column: 1 / 3; */
+
+        /* Variation 002 - Using grid Areas depending on the grid-template-row prop on the father */
+        grid-area: header;
+      }
+      .navbar {
+        background: yellow;
+        /* grid-column: 1 / 3; */
+
+        /* Variation 002 - Using grid Areas depending on the grid-template-row prop on the father  */
+        grid-area: navbar;
+      }
+      .sidebar {
+        background: green;
+        /* grid-column: 1 / 2; */
+        /* grid-row: 3/4; */
+
+        /* Variation 002 - Using grid Areas depending on the grid-template-row prop on the father */
+        grid-area: sidebar;
+      }
+      .main {
+        background: blue;
+        /* Variation 002 - Using grid Areas depending on the grid-template-row prop on the father */
+        grid-area: main;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Excercise 001  -->
+    <!-- <section class="container">
+      <div class="one"><p>1</p></div>
+      <div class="two"><p>2</p></div>
+      <div class="three"><p>3</p></div>
+    </section> -->
+
+    <!-- UNCOMMENT HTML & CSS TO REVIEW ANSWER -->
+
+    <!-- Excercise 002 -->
+    <section class="container-2">
+      <div class="header">header</div>
+      <div class="navbar">navbar</div>
+      <div class="sidebar">sidebar</div>
+      <div class="main">main</div>
+    </section>
+  </body>
+</html>

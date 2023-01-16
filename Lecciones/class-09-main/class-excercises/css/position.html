@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position Class Excercise</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    body > div:first-of-type {
+      top: 0;
+      background: red;
+      width: 100vw;
+      z-index: 1;
+      height: 20px;
+    }
+    body > div:first-of-type h1 {
+      margin-top: 0;
+      font-size: 16px;
+      text-align: center;
+    }
+    body > div:last-of-type {
+      background: green;
+      height: 650px;
+      width: 650px;
+      position: relative;
+      top: 50px;
+      left: 50px;
+    }
+    body > div:last-of-type img {
+      width: 150px;
+      height: 150px;
+      position: absolute;
+    }
+    body > div:last-of-type img:nth-child(1) {
+      top: 0;
+      left: 0;
+    }
+    body > div:last-of-type img:nth-child(2) {
+      top: 0;
+      right: 0;
+    }
+    body > div:last-of-type img:nth-child(3) {
+      bottom: 0;
+      right: 0;
+    }
+    body > div:last-of-type img:nth-child(4) {
+      bottom: 0;
+      left: 0;
+    }
+  </style>
+  <body>
+    <div>
+      <h1>Wu Tang Clan aint nuthing to F^&%^& with!</h1>
+    </div>
+    <div>
+      <img
+        src="https://cdn.wamiz.fr/cdn-cgi/image/format=auto,quality=80,width=400,height=400,fit=cover/animal/breed/pictures/613f5a22b5cff661748661.jpg"
+        alt="Imagen de un cachorro raza labrador"
+      />
+      <img
+        src="https://cdn.wamiz.fr/cdn-cgi/image/format=auto,quality=80,width=400,height=400,fit=cover/animal/breed/pictures/613f5a22b5cff661748661.jpg"
+        alt="Imagen de un cachorro raza labrador"
+      />
+      <img
+        src="https://cdn.wamiz.fr/cdn-cgi/image/format=auto,quality=80,width=400,height=400,fit=cover/animal/breed/pictures/613f5a22b5cff661748661.jpg"
+        alt="Imagen de un cachorro raza labrador"
+      />
+      <img
+        src="https://cdn.wamiz.fr/cdn-cgi/image/format=auto,quality=80,width=400,height=400,fit=cover/animal/breed/pictures/613f5a22b5cff661748661.jpg"
+        alt="Imagen de un cachorro raza labrador"
+      />
+    </div>
+  </body>
+</html>

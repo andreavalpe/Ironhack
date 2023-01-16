@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* h1:hover {
+        color: red;
+        cursor: pointer;
+      } */
+
+      body h1:first-of-type {
+        color: red;
+      }
+
+      body > p:first-of-type:hover {
+        color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 11/01/2023
+Pseudoselectores
+Creamos un mini documento con un <h1> con vuestro nombre, una <p> con un lorem ipsum, un <div> con un <p> dentro. Buscamos un pseudoselector para apuntar al <h1> y otro pseudoselector de posición para la primera <p>. Al <h1> le cambiamos el color y a la <p> le cambiamos el color mediante un hover. -->
+    <h1>Diego Zito</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim delectus at
+      quo sequi ex optio, corrupti nulla ipsa numquam, impedit laudantium,
+      similique nemo voluptatibus dignissimos explicabo dolore cum nisi id?
+    </p>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus, quos
+        enim. Aliquam natus, quo amet ullam, est nam neque ipsam iste voluptatum
+        velit maxime commodi! Doloremque dignissimos tempora illo officiis.
+      </p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,186 @@
+/*
+Colors:
+
+Text: 1A1A1A
+Green: #00B172
+White: #FFF
+
+*/
+
+/* google fonts import  - ROBOTO */
+@import url("'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+/* CSS RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  /* TESTING PURPOSES */
+  /* outline: 1px solid rgb(0, 0, 0); */
+}
+
+/* General Styling */
+body {
+  font-family: "Roboto", sans-serif;
+  color: #1a1a1a;
+  background: #fafafa;
+  font-size: 16px;
+}
+/* Section 001 -- Navbar - CSS */
+header {
+  /* position: fixed; */
+  /* top: 0; */
+  z-index: 2;
+  width: 100%;
+  /* flex props */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  /* flex props */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul li {
+  margin: 0 1rem 0 0;
+}
+
+header img {
+  width: 160px;
+}
+
+/* Section 002 -- Hero Section - CSS */
+section:nth-of-type(1) {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+section:nth-of-type(1) img {
+  object-fit: cover;
+  width: 100%;
+  height: 650px;
+  /* padding-top: 1rem; */
+}
+section:nth-of-type(1) div {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  padding: 0 6rem;
+  /* padding-top: 1rem; */
+}
+section:nth-of-type(1) h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+}
+section:nth-of-type(1) p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/* Section 003 -- EWhats on Spotify CSS */
+section:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem 0;
+}
+section:nth-of-type(2) h2 {
+  /* border-bottom: 1px solid green; */
+  text-decoration: underline #00b172;
+  margin-bottom: 2rem;
+}
+
+section:nth-of-type(2) h4 {
+  /* border-bottom: 1px solid green; */
+  color: #00b172;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+section:nth-of-type(2) p {
+  /* border-bottom: 1px solid green; */
+  font-weight: 400;
+}
+section:nth-of-type(2) div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+section:nth-of-type(2) .iconbox img {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+section:nth-of-type(2) .iconbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+}
+
+/* Section 004 - Kanye CSS */
+section:nth-of-type(3) {
+  padding: 1rem;
+}
+
+section:nth-of-type(3) h3 {
+  font-size: 1.5rem;
+  color: #fafafa;
+  width: 100%;
+}
+section:nth-of-type(3) div {
+  background: #00b172;
+  display: flex;
+  justify-content: space-around;
+}
+
+.internalGreen {
+  padding: 2rem;
+}
+
+section:nth-of-type(3) div > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.textBlock {
+  display: flex;
+  flex-direction: column;
+}
+.textBlock h5 {
+  margin-bottom: 1rem;
+  color: #fafafa;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.textBlock p {
+  color: #fafafa;
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+.spotifyWhite {
+  display: flex;
+  align-items: center;
+}
+.spotifyWhite img {
+  width: 20%;
+}
+.spotifyAppp {
+  display: flex;
+  padding: 2rem;
+}
+.spotifyAppp img {
+  width: 100%;
+}
