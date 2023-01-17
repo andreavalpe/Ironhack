@@ -1,8 +1,189 @@
-/*
-Colors:
+@import url("'https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 
-Text: 1A1A1A
-Green: #00B172
-White: #FFF
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-*/
+header {
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+}
+
+header img {
+    width: 160px;
+    padding: 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+
+nav a {
+    color: black;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+.backgroundimg  {
+    background-image: url(../images/landing.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    height: 600px;
+    position: relative;
+    width: auto;
+    padding-top: 300px;
+
+}
+
+.textone { /*--div*/
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    color: white;
+}
+
+.title{ /*--music is for everyone*/
+    text-align: center;
+    font-size: 100px;
+    font-weight: 300;
+    line-height: 2;
+}
+
+.subtitle { /*--description of spotify*/
+    text-align: center;
+    font-size: 50px;
+}
+
+#sectiontwo h1{ /*--what's on spotify*/
+    font-size: 40px;
+    text-align: center;
+    font-weight: 300;
+    color: black;
+    margin: 27px;
+    padding-bottom: 29px;
+    font-weight: bold;
+}
+
+#sectiontwo span {
+    border-bottom: solid 4px #00b172;
+}
+
+#sectiontwo h2 {
+    color: #00b172;
+}
+
+#sectiontwo p {
+    text-align: center;
+    font-size: 28px;
+    opacity: .25;
+}
+
+#sectiontwo img {
+    width: 100px;
+}
+
+.onediv {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    margin-bottom: 32px;
+}
+
+.twodiv{
+    flex-direction: column;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 10px 126px;
+}
+
+#sectionthree{
+    background-color: #00b172;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    margin: 40px;
+    
+}
+
+#sectionthree h2 {
+    text-align: left;
+    font-size: 20px;
+    text-decoration: underline;
+    text-underline-offset: 26px;
+}
+
+#sectionthree p {
+    font-size: 10px;
+}
+
+#sectionthree .threediv {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+#sectionthree .fourdiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    padding-left: 60px;
+    text-align: left;
+    float: left;
+    padding-bottom: 62px;
+}
+
+#sectionthree .image {
+    padding: 20px 10px;
+}
+
+#sectionthree .logo {
+    width: 166px;
+    float: right;
+    padding-right: 80px;
+}
+
+#sectionthree .kanye {
+    width: 300px;
+    padding-right: 150px;
+    padding-left: 20px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+#sectionthree .fourdiv h2{
+    font-size: 40px;
+
+}
+
+#sectionthree .fourdiv h3 {
+    font-size: 30px;
+}
+
+#sectionthree .fourdiv p {
+    font-size: 20px;
+    padding-right: 100px;
+}
