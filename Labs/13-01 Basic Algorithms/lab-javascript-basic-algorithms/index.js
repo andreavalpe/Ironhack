@@ -18,19 +18,30 @@ if (hacker1.length>hacker2.length){
 }
 
 // Iteration 3: Loops
+
+3.1
 let hacker1 = "Jose";
 let hacker2 = "Marga"
 let upperCase ="";
 let reverse = "";
 
 for (let i = 0; i<hacker1.length; i++){
-  hacker1[i];
   upperCase += hacker1[i].toUpperCase() + " ";
 }
 console.log (upperCase);
 
+3.2
 for (let j= hacker2.length-1; j>=0; j--){
-  hacker2 [j];
   reverse += hacker2 [j];
 }
 console.log (reverse);
+
+3.3
+
+if (hacker1 > hacker2) {
+  console.log("The driver's name goes first.");
+} else if (hacker1 < hacker2) {
+  console.log("Yo, the navigator goes first definitely.");
+} else {
+  console.log("What?! You both have the same name?");
+}

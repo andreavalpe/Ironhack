@@ -94,7 +94,7 @@ const sum = (arrayArgument) => {
   }
   return mixedSum;
 };
-alert(sum(mixedArray));
+//alert(sum(mixedArray));
 console.log("Sum of any mixed array");
 console.log(sum(mixedArray));
 console.log(sum(mixedArrayTwo));
@@ -174,15 +174,15 @@ const whileLoopArrayExample = [
   "Girona",
 ];
 // Almacenaremos la longitud de el array "whileLoopArrayExample" dentro de una variable para poder usarla dentro del while loop.
-let lengthOfWhileArrayExample = whileLoopArrayExample.length;
+// let lengthOfWhileArrayExample = whileLoopArrayExample.length;
 // verificamos que recibimos el valor de la long del array mencionado en la linea 168
-console.log(lengthOfWhileArrayExample);
+// console.log(lengthOfWhileArrayExample);
 // dfinimos variable incialmente en 0 para agregarle el valor individual del array :)
-let countOfWhileLoopArray = 0;
-while (lengthOfWhileArrayExample--) {
-  console.log(whileLoopArrayExample[countOfWhileLoopArray]);
-  countOfWhileLoopArray++;
-}
+// let countOfWhileLoopArray = 0;
+// while (lengthOfWhileArrayExample--) {
+//   console.log(whileLoopArrayExample[countOfWhileLoopArray]);
+//   countOfWhileLoopArray++;
+// }
 
 console.log("------------------");
 // WHILE LOOP - ARRAY OF OBJECTS
@@ -195,13 +195,13 @@ const whileLoopArrayOfObjectsExample = [
   { name: "Octavio", age: 25, group: "B" },
 ];
 // Almacenaremos la longitud de el array "whileLoopArrayOfObjectsExample" dentro de una variable para poder usarla dentro del while loop.
-let lengthOfWhileArrayObjectExample = whileLoopArrayOfObjectsExample.length;
+// let lengthOfWhileArrayObjectExample = whileLoopArrayOfObjectsExample.length;
 // dfinimos variable incialmente en 0 para agregarle el valor individual del array :)
-let count2 = 0;
-while (lengthOfWhileArrayObjectExample--) {
-  console.log(whileLoopArrayOfObjectsExample[count2].age);
-  count2++;
-}
+// let count2 = 0;
+// while (lengthOfWhileArrayObjectExample--) {
+//   console.log(whileLoopArrayOfObjectsExample[count2].age);
+//   count2++;
+// }
 
 console.log("------------------");
 console.log("-  DO WHILE LOOP:");
@@ -223,58 +223,281 @@ console.log("-  DO WHILE LOOP:");
 
 // DO WHILE BUCLE - EXAMPLE
 // PROGRAMA PARA IMPRIMIR ALGO EN CONSOLA :)
-console.log("Imprimir del 1 al 10");
-let index = 1;
-let doWhileLoopExample = 10;
+// console.log("Imprimir del 1 al 10");
+// let index = 1;
+// let doWhileLoopExample = 10;
 // usamos el famoso do-while
-do {
-  console.log(index);
-  index++;
-} while (index <= doWhileLoopExample);
+// do {
+//   console.log(index);
+//   index++;
+// } while (index <= doWhileLoopExample);
 
 //console.log("------------------");
 console.log("-  FOR OF LOOP:");
 // EXAMPLES
 
 // USING AN ARRAY OF NUMBERs VARIABLE
-let iterable = [10, 20, 30];
-for (let value of iterable) {
-  value += 1;
-  console.log(value);
-}
+// let iterable = [10, 20, 30];
+// for (let value of iterable) {
+//   value += 1;
+//   console.log(value);
+// }
 
 // USING AN ARRAY OF DATA "CITIES"
-const dataSimple = ["Barcelona", "Tokyo", "Berlin", "Helsinki"];
-for (let value of dataSimple) {
-  value += " is our city";
-  console.log(value);
-}
+// const dataSimple = ["Barcelona", "Tokyo", "Berlin", "Helsinki"];
+// for (let value of dataSimple) {
+//   value += " is our city";
+//   console.log(value);
+// }
 
 console.log("------------------");
 // USING AN ARRAY OF OBJECTS
-const dataTwo = [
-  { name: "Diego", age: 30, group: "A" },
-  { name: "Jarko", age: 25, group: "B" },
-  { name: "Aleix", age: 20, group: "A" },
-  { name: "Marcos", age: 15, group: "C" },
-  { name: "Octavio", age: 25, group: "B" },
-];
-for (let value of dataTwo) {
-  value.name += " is the best";
-  console.log(value.name);
-}
+// const dataTwo = [
+//   { name: "Diego", age: 30, group: "A" },
+//   { name: "Jarko", age: 25, group: "B" },
+//   { name: "Aleix", age: 20, group: "A" },
+//   { name: "Marcos", age: 15, group: "C" },
+//   { name: "Octavio", age: 25, group: "B" },
+// ];
+// for (let value of dataTwo) {
+//   value.name += " is the best";
+//   console.log(value.name);
+// }
 
+console.log("------------------");
+console.log("Excercise 001");
+console.log("------------------");
 // ------------- Ejercicio 1 (for loop): -------------
 // Crea un for loop que cuente de 0 a 100 i en cada iteración sume el valor actual a un resultado total. Al final haz un console.log que printee el resultado.
 
+// Solution's
+
+// Diego Solution
+let result = 0;
+for (let index = 0; index <= 100; index++) {
+  // Esto [short-version]
+  result += index;
+  // Esto [long-version]
+  //result = result + index;
+}
+console.log(
+  `Class Solution - El total de la suma de los numeros del 1 al 100 seria: ${result}`
+);
+
+// Pablo Solution
+let contador = 0;
+for (let i = 0; i <= 100; i++) {
+  //console.log(i);
+  //console.log(contador);
+  contador = contador + i;
+}
+console.log(
+  `Pablo - El total de la suma de los numeros del 1 al 100 seria: ${contador}`
+);
+
+// Pablo Solution - BUT INVERTED
+let contar = 0;
+for (let i = 100; i >= 0; i--) {
+  // console.log(i);
+  contar += i;
+}
+console.log(
+  `Pablo Inverted - El total de la suma de los numeros del 1 al 100 seria: ${contar}`
+);
+// Karen's Solution
+let resultTotal = 0;
+for (let i = 0; i <= 100; i++) {
+  resultTotal += i;
+  // dentro del body del bucle [POR EL ALCANZE DE ESTA VARIABLE - SOLO LO PUEDES HACER ACA]
+  //console.log(i);
+}
+
+console.log(
+  `Karen - El total de la suma de los numeros del 1 al 100 seria: ${resultTotal}`
+);
+
+console.log("------------------");
+console.log("Excercise 002");
+console.log("------------------");
 // ------------- Ejercicio 2 (for loop): -------------
 // Crea un array de números llamado "numbers" con valores aleatorios. Utiliza un for loop para recorrer el array y encontrar el número mayor y el número menor. Imprime ambos números en la consola.
+// for (expresionInicial, condicion, actualizacionDeExpresion){
+// //body del bucle for
+// }
+const numbers = [100, 1000003, -450, 500, 0, 12345678, 0.45];
+console.table(numbers);
+// check array on console :)
 
+//Class Solution 001
+let mayorNumber = 0;
+let minorNumber = 0;
+for (let i = 0; i <= numbers.length; i++) {
+  console.log(i);
+  // comparativa para ver el num mayor
+  if (numbers[i] > mayorNumber) {
+    mayorNumber = numbers[i];
+  }
+  // comparativa para ver el num menor
+  if (numbers[i] < minorNumber) {
+    minorNumber = numbers[i];
+  }
+}
+console.log(`The biggest number on this array would be ${mayorNumber}`);
+console.log(`The smallest number on this array would be ${minorNumber}`);
+
+//Class Solution 001 - Refactor
+const numbersTwo = [100, 1000003, -450, 500, 0, 12345678, 0.45, 40000000000000];
+let mayorNumberRefactor = 0;
+let minorNumberRefactor = 0;
+for (let i = 0; i <= numbersTwo.length; i++) {
+  console.log(i);
+  // comparativa para ver el num mayor
+  if (numbersTwo[i] > mayorNumberRefactor) mayorNumberRefactor = numbersTwo[i];
+  // comparativa para ver el num menor
+  if (numbersTwo[i] < minorNumberRefactor) minorNumberRefactor = numbersTwo[i];
+}
+console.log(`The biggest number on this array would be ${mayorNumberRefactor}`);
+console.log(
+  `The smallest number on this array would be ${minorNumberRefactor}`
+);
+
+//Class Solution 001 - Refactor - else-if
+const numbersThree = [
+  100, 1000003, -450, 500, 0, 12345678, 0.45, 40000000000000,
+];
+let mayorNumberElseIf = 0;
+let minorNumberElseIf = 0;
+for (let i = 0; i <= numbersThree.length; i++) {
+  console.log(i);
+  // comparativa para ver el num mayor
+  if (numbersThree[i] > mayorNumberElseIf) mayorNumberElseIf = numbersThree[i];
+  // comparativa para ver el num menor
+  else if (numbersThree[i] < minorNumberElseIf)
+    minorNumberElseIf = numbersThree[i];
+}
+console.log(`The biggest number on this array would be ${mayorNumberElseIf}`);
+console.log(`The smallest number on this array would be ${minorNumberElseIf}`);
+
+//
+//
+//
+// Andoni & Alvaro Solution - Whole Numbers using .0 = "PROBLEM WHAT HAPPENS WHEN WE INITIALIZE THE VARIABLES AT 0"
+let andoniNumbers = [90, 89, 67, 29, 12, 56, 72, 23, 0.001];
+console.table(andoniNumbers);
+
+// Problem showcased here
+// Asignandole el valor 0 inicial
+let mayorNumberAndoni = 0;
+let minorNumberAndoni = 0;
+
+// APPROACH TO A SOLUTION,
+// Pasandole la pocision 0 del array para que empieze a contar desde el array mismo.
+let mayorNumerArrayPosition = andoniNumbers[0];
+let minorNumerArrayPosition = andoniNumbers[0];
+
+// LOOP
+for (let i = 0; i <= andoniNumbers.length; i++) {
+  console.log(i);
+  // comparativa para ver el num mayor
+  console.log(andoniNumbers[i] > mayorNumerArrayPosition);
+  if (andoniNumbers[i] > mayorNumerArrayPosition) {
+    console.log("hello");
+    console.log(andoniNumbers[i]);
+    mayorNumerArrayPosition = andoniNumbers[i];
+  }
+  // comparativa para ver el num menor
+  else if (andoniNumbers[i] < minorNumerArrayPosition) {
+    minorNumerArrayPosition = andoniNumbers[i];
+  }
+}
+console.log(
+  `The biggest number on this array would be ${mayorNumerArrayPosition}`
+);
+console.log(
+  `The smallest number on this array would be ${minorNumerArrayPosition}`
+);
+
+// Alexis Solution, related to angela approach with Andoni's syntax
+// Array that wwe will be using
+let numbersUsingUndefinedVariables = [90, 89, 67, 29, 12, 56, 72, 23, 0.001];
+// Asingandole el valor de un string vacio inicial
+// Angela approach
+let mayorNumberString = "";
+let minorNumberString = "";
+
+// Andoni approach
+let mayorNumberUndefined;
+let minorNumberUndefined;
+
+for (let i = 0; i <= numbersUsingUndefinedVariables.length; i++) {
+  if (minorNumberUndefined > numbersUsingUndefinedVariables[i]) {
+    minorNumberUndefined = numbersUsingUndefinedVariables[i];
+  } else if (mayorNumberUndefined < numbersUsingUndefinedVariables[i]) {
+    mayorNumberUndefined = numbersUsingUndefinedVariables[i];
+  } else if (
+    minorNumberUndefined === undefined &&
+    mayorNumberUndefined === undefined
+  ) {
+    minorNumberUndefined = numbersUsingUndefinedVariables[i];
+    mayorNumberUndefined = numbersUsingUndefinedVariables[i];
+  }
+}
+console.log(
+  `The biggest number on this array would be ${mayorNumberUndefined} - USING UNDEFINED VARIABLES`
+);
+console.log(
+  `The smallest number on this array would be ${minorNumberUndefined} - USING UNDEFINED VARIABLES`
+);
+
+console.log("------------------");
+console.log("Excercise 003");
+console.log("------------------");
 // ------------- Ejercicio 3 (while loop): -------------
 // Utiliza un bucle while para imprimir los números pares del 2 al 20.
+
+// Syntax;
+// let variableDefinitionHere = anyGivenDataType :)
+// while (condition) {
+//   // body del bucle while
+// }
+
+// Class solution - Solution 001
+console.log("------- Solution 001 -----------");
+let evenNumber = 2;
+while (evenNumber <= 20) {
+  console.log(evenNumber);
+  evenNumber += 2;
+  // evenNumber++;
+}
+console.log("------- Solution 002 -----------");
+// Class Solution - Solution 002
+let evenNumberTwo = 2;
+while (evenNumberTwo <= 20) {
+  if (evenNumberTwo % 2 == 0) console.log(evenNumberTwo);
+  evenNumberTwo++;
+}
 
 // ------------- Ejercicio 4 (do while): -------------
 //Crea una variable llamada "numeroAdivinar" con un número entero entre 1 y 10 (puedes asignarle un valor manualmente).
 // Crea una variable llamada "numeroIngresado" y asignale el valor 0.
 // Utiliza un bucle do...while para asignar a la variable "numeroIngresado" un número entero obtenido de un array de números [1,2,3,4,5,6,7,8,9,10]. El bucle debe continuar hasta que "numeroIngresado" sea igual a "numeroAdivinar".
 // Una vez que el bucle finaliza, imprime en la consola el número de iteraciones realizadas.
+
+let numeroAdivinar = 8;
+let numeroIngresado = 0;
+let arrayDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let intentos = 0;
+
+do {
+  numeroIngresado = arrayDeNumeros[intentos];
+  intentos++;
+} while (numeroIngresado != numeroAdivinar);
+
+console.log(
+  `El numero a adivinar era ${numeroAdivinar} y se adivinó en ${intentos} intentos`
+);
+
+// URL LINK TO REVIEW CLASS
+//https://www.programiz.com/javascript/for-loop
+
+// VIDEO
