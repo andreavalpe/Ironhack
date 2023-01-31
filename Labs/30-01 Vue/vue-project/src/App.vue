@@ -78,12 +78,12 @@ nav {
 }
 
 .vueInfo h1 {
-font-size: 6em;
+  font-size: 6em;
 }
 
 .vueInfo h3 {
-font-size: 3em;
-padding: 3% 20%;
+  font-size: 3em;
+  padding: 3% 20%;
 }
 
 .vueInfo button {
